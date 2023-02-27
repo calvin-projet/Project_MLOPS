@@ -17,7 +17,7 @@ def prepare_data(data_path):
     # Return the cleaned and transformed data
     return X, y
 
-def predict_rating(anime_title, anime_genre, anime_description, anime_type, anime_producer, anime_studio):
+def predict_rating2(anime_title, anime_genre, anime_description, anime_type, anime_producer, anime_studio):
     # Load the trained model from disk (you might want to store it as a file)
     model = load_model('data/model_xgb.pkl')
 
