@@ -19,8 +19,8 @@ pipeline {
     }
     stage('Pushing to Dockerhub')
       steps {
-         sh 'docker push wvaihau/api-prediction-image:latest'
-         sh 'docker push wvaihau/frontend-prediction-image:latest'
+         sh 'docker push calv20/api-prediction-image:latest'
+         sh 'docker push calv20/frontend-prediction-image:latest'
          }
      }
   }
