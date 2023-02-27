@@ -17,11 +17,11 @@ pipeline {
         sh 'docker push calv20/myapp'
       }
     }
-    stage('Deploy') {
+    stage('Pushing to Dockerhub')
       steps {
-        sh 'docker pull calv20/myapp'
-        sh 'docker run --rm -d -p 8090:8090 calv20/myapp'
-      }
-    }
+         sh 'docker push wvaihau/api-prediction-image:latest'
+         sh 'docker push wvaihau/frontend-prediction-image:latest'
+         }
+     }
   }
 }
