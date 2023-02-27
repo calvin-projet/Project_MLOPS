@@ -1,7 +1,7 @@
 import unittest
 import json
 from app import app
-from model import predict_rating
+from model import predict_rating2
 
 class TestApp(unittest.TestCase):
 
