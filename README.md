@@ -6,8 +6,8 @@ This is a Flask application that predicts whether a user would enjoy a given ani
 
 ### Prerequisites
 
-Python 3.8 or higher
-Docker
+-Python 3.8 or higher
+-Docker
 
 ### Installation
 
