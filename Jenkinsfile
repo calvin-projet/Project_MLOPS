@@ -10,13 +10,13 @@ pipeline {
             }
         }         stage('Push') {
             steps {
-                sh 'docker tag myapp myusername/myapp'
-                sh 'docker push myusername/myapp'
+                sh 'docker tag myapp calv20/myapp'
+                sh 'docker push calv20/myapp'
             }
         }         stage('Deploy') {
             steps {
-                sh 'docker pull myusername/myapp'
-                sh 'docker run --rm -d -p 8090:8090 myusername/myapp'
+                sh 'docker pull calv20/myapp'
+                sh 'docker run --rm -d -p 8090:8090 calv20/myapp'
             }
         }
     }
